@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/classroom"
+        android:icon="@drawable/menu_classroom"
+        android:title="@string/menuClassroom"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/subject"
+        android:icon="@drawable/menu_subject"
+        android:title="@string/menuSubject"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/event"
+        android:icon="@drawable/menu_event"
+        android:title="@string/menuEvent"
+        app:showAsAction="withText"/>
+
+    <item android:id="@+id/mark"
+        android:icon="@drawable/menu_mark"
+        android:title="@string/menuMark"
+        app:showAsAction="never|withText"/>
+
+    <item  android:id="@+id/statistics"
+        android:icon="@drawable/menu_statistics"
+        android:title="@string/menuStatistics"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/settings"
+        android:icon="@drawable/menu_account"
+        android:title="@string/menuSettings"
+        app:showAsAction="never|withText"/>
+
+    <item android:id="@+id/signout"
+        android:icon="@drawable/menu_signout"
+        android:title="@string/signout"
+        app:showAsAction="never|withText"/>
+</menu>

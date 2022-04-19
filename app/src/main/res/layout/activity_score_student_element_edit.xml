@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <!-- Information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/rectangle_6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="85"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subjectName"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content"
+                android:text="@string/score_student_code"
+                android:textColor="#5D5D5D" />
+
+            <TextView
+                android:id="@+id/student"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="@string/score_student_name"
+                android:textColor="#5D5D5D" />
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:text="@string/score_student_score"
+                android:inputType="numberSigned"
+                android:id="@+id/button_edit_score_student"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textColor="#5D5D5D"
+                android:layout_marginRight="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="15"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="right"-->
+<!--            android:orientation="horizontal">-->
+<!--            <EditText-->
+<!--                android:text="@string/score_student_score"-->
+<!--                android:inputType="numberSigned"-->
+<!--                android:id="@+id/button_edit_subject_scores"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="#5D5D5D"-->
+<!--                android:layout_marginRight="10dp"/>-->
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

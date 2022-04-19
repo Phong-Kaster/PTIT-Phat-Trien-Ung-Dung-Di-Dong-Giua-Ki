@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical"
+    tools:context=".Statistic.SubjectListActivity">
+
+    <!--Linear Layout Avatar & Home shortcut -->
+    <fragment
+        android:id="@+id/topBar"
+        class="com.example.stdmanager.TopBarHomeIconFragment"
+        tools:layout="@layout/fragment_top_bar_home_icon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    </fragment>
+    <!--        End Linear Layout Avatar & Home shortcut -->
+
+
+    <!-- Subject Table -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_6"
+        android:orientation="vertical"
+
+        android:paddingTop="10dp">
+
+        <!--  Classroom title & search bar -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/TitleSubject"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <SearchView
+                android:id="@+id/searchSubject"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:iconifiedByDefault="false"
+                android:queryHint="Tìm môn học"/>
+
+        </LinearLayout>
+        <!--  End Subject Classroom title & search bar -->
+
+
+        <!-- Subject List -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <!-- Title Table -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#F2F2F2"
+                android:paddingTop="10dp"
+                android:text="@string/SubjectTitleInformation"
+                android:textColor="@color/black" />
+            <!-- End Title Table -->
+
+            <!-- List View -->
+            <ListView
+                android:id="@+id/subjectListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/black"
+                android:dividerHeight="1sp" />
+            <!-- End List View -->
+
+        </LinearLayout>
+        <!-- End Subject List -->
+
+    </LinearLayout>
+    <!-- End Subject Table -->
+
+
+</LinearLayout>

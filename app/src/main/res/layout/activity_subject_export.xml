@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subject.SubjectExportActivity"
+    android:orientation="vertical">
+
+  <TextView
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/TitleSubject"
+      android:paddingTop="20sp"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      />
+
+  <TableLayout
+      android:layout_weight="1"
+      android:id="@+id/subjectTable"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/tableborder"
+      android:layout_margin="10dp"
+      >
+
+    <!-- Table Heading -->
+    <TableRow
+        android:background="@color/white">
+
+      <TextView
+          android:layout_width="100dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:background="@drawable/tableborder"
+          android:gravity="center|center_horizontal"
+          android:text="@string/firstName"
+          android:textAlignment="center"
+          android:textColor="@android:color/background_dark"
+          android:textSize="14sp" />
+
+      <TextView
+          android:layout_width="20dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+
+          android:background="@drawable/tableborder"
+          android:gravity="center|center_horizontal"
+          android:padding="5sp"
+          android:text="@string/HKEditSubject"
+          android:textAlignment="center"
+          android:textColor="@android:color/background_dark"
+          android:textSize="14sp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:background="@drawable/tableborder"
+          android:gravity="center|center_horizontal"
+          android:padding="5sp"
+          android:text="@string/NHEditSubject"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
+
+      <TextView
+          android:layout_width="10dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:background="@drawable/tableborder"
+          android:gravity="center|center_horizontal"
+          android:padding="5sp"
+          android:text="@string/HSEditSubject"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="14sp" />
+
+    </TableRow>
+  </TableLayout>
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnExport"
+      android:background="@drawable/button_background_1"
+      android:text="@string/ExportSubject"
+      style="@style/button_style" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/Btn_ExportCancel"
+      style="@style/button_style"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="20dp"
+      android:background="@drawable/button_background_5"
+      android:text="@string/Cancel" />
+
+
+
+</LinearLayout>

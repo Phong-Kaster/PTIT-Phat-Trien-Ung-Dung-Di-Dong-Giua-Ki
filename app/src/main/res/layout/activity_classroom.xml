@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical"
+    tools:context=".Classroom.ClassroomActivity">
+
+    <!--Linear Layout Avatar & Home shortcut -->
+    <fragment
+        android:id="@+id/topBar"
+        class="com.example.stdmanager.TopBarHomeIconFragment"
+        tools:layout="@layout/fragment_top_bar_home_icon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    </fragment>
+    <!--End Linear Layout Avatar & Home shortcut -->
+
+
+
+    <!-- Student Table -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackground"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <!-- Student Classroom title & search bar -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainBackground">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/teacherTitleList"
+                android:textColor="@color/mainText"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <SearchView
+                android:id="@+id/classroomSearchView"
+                android:layout_width="257dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:iconifiedByDefault="false"
+                android:queryHint="Tìm sinh viên" />
+
+        </LinearLayout>
+        <!--  End Student Classroom title & search bar -->
+
+
+        <!-- Student List -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <!-- Title Table -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/mainBackground"
+                android:paddingTop="10dp"
+                android:text="@string/student_table_title_infomation"
+                android:textColor="@color/mainText" />
+            <!-- End Title Table -->
+
+            <!-- List View -->
+            <ListView
+                android:id="@+id/classroomListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/mainBackground"
+                android:dividerHeight="1sp" />
+            <!-- End List View -->
+
+        </LinearLayout>
+        <!-- End Student List -->
+
+
+        <!-- Button -->
+        <LinearLayout
+            android:background="@color/mainBackground"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/classroomButtonCreation"
+                android:background="@drawable/button_background_1"
+                android:text="@string/student_table_button_add"
+                style="@style/button_style" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/classroomButtonExport"
+                style="@style/button_style"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background_2"
+                android:text="@string/student_table_button_export" />
+        </LinearLayout>
+        <!-- End Button -->
+
+    </LinearLayout>
+    <!-- End Student Table -->
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackground"
+    tools:context=".Settings.SettingsApplicationActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/darkModeTextView"
+            style="@style/setting_application_text_view_style"
+            android:text="@string/darkMode" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/darkModeSwitch"
+            style="@style/setting_application_switch_style"
+            android:layout_toEndOf="@id/darkModeTextView"
+            android:textOff="@string/darkModeTextOff"
+            android:textOn="@string/darkModeTextOn"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/eventTextView"
+            style="@style/setting_application_text_view_style"
+            android:text="@string/eventTextView" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/eventSwitch"
+            android:layout_toEndOf="@id/eventTextView"
+            style="@style/setting_application_switch_style"
+            android:textOff="@string/eventTextOff"
+            android:textOn="@string/eventTextOn"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+</LinearLayout>

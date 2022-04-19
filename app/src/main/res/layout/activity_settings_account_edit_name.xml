@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:textColor="@color/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/rectangle_6"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:text="@string/firstName"
+            android:textSize="40sp"
+            style="@style/settings_account_edit_name_text_style" />
+
+        <Space
+            style="@style/settings_account_edit_name_text_style"
+            android:minHeight="20dp" />
+
+        <EditText
+            android:id="@+id/settingsAccountEditTextName"
+            style="@style/settings_account_edit_name_text_style"
+            android:hint="@string/fullName"
+             />
+
+        <Space
+            style="@style/settings_account_edit_name_text_style"
+            android:minHeight="20dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/settingsAccountButtonSaveName"
+            style="@style/button_primary_style"
+            android:background="@drawable/button_background_3"
+            android:text="@string/Save" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

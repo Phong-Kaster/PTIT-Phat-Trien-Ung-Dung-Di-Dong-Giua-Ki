@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textColor="@color/mainText"
+    android:background="@color/mainBackground"
+    android:id="@+id/classroomExportLayout"
+    tools:context=".Classroom.ClassroomExportActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classroomExportTitle"
+        android:paddingTop="20sp"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_weight="1"
+        android:id="@+id/classroomTable"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mainBackground"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Table Heading -->
+        <TableRow
+            android:background="@color/mainBackground">
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/familyName"
+                android:textColor="@color/mainText"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/firstName"
+                android:textColor="@color/mainText"
+                android:padding="5sp"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/mainText"
+                android:padding="5sp"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/birthday"
+                android:textColor="@color/mainText"
+                android:padding="5sp"
+                android:textSize="14sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/classroomExportButtonPhoto"
+            android:text="@string/classroomExportButtonPhoto"
+            style="@style/button_style"
+            android:background="@drawable/button_background_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/classroomExportButtonPDF"
+            android:layout_marginTop="10dp"
+            android:text="@string/classroomExportButtonPDF"
+            style="@style/button_style"
+            android:background="@drawable/button_background_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/classroomExportButtonGoBack"
+            style="@style/button_style"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background_3"
+            android:text="@string/goback" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

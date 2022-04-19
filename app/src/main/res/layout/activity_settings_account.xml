@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/mainBackground"
+    tools:context=".Settings.SettingsAccountActivity">
+
+
+
+        <ImageView
+            android:id="@+id/settingsAccountImageViewAvatar"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/avatar" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="12dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/settingsAccountButtonChangeAvatar"
+            style="@style/button_style"
+            android:layout_width="200dp"
+            android:layout_height="30sp"
+            android:background="@drawable/button_background_2"
+            android:text="@string/ChangeAvatar" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp" />
+
+        <!-- NAME -->
+        <LinearLayout
+            android:id="@+id/linearLayoutName"
+            tools:ignore="KeyboardInaccessibleWidget"
+            style="@style/setting_account_linear_layout_style">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/fullName"
+                    android:textColor="@color/mainText"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"
+                    style="@style/setting_account_text_view_style" />
+
+                <TextView
+                    android:id="@+id/settingsAccountTextViewName"
+                    style="@style/setting_account_text_view_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <ImageView
+                    android:layout_marginEnd="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/arrow_right"
+                    tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp" />
+
+        <!-- NAME -->
+        <LinearLayout
+            android:id="@+id/linearLayoutPassword"
+            tools:ignore="KeyboardInaccessibleWidget"
+            style="@style/setting_account_linear_layout_style">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/changePassword"
+                    android:textColor="@color/mainText"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"
+                    style="@style/setting_account_text_view_style" />
+
+                <TextView
+                    style="@style/setting_account_text_view_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text=""
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <ImageView
+                    android:layout_marginEnd="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/arrow_right"
+                    tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

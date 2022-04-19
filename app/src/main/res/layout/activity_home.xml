@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/screen">
+
+  <fragment
+      android:id="@+id/topBar"
+      class="com.example.stdmanager.TopBarMenuIconFragment"
+      tools:layout="@layout/fragment_top_bar_menu_icon"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content">
+  </fragment>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center_horizontal"
+      android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+      <ImageButton
+          android:id="@+id/buttonHomeClassroom"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/list" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/menuClassroom"
+          android:textColor="@color/white"
+          android:textAlignment="center"
+          android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="30dp"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+      <ImageButton
+          android:id="@+id/buttonHomeSubject"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/subject"
+          tools:ignore="ContentDescription" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/menuSubject"
+          android:textColor="@color/white"
+          android:textAlignment="center"
+          android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="30dp"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+      <ImageButton
+          android:id="@+id/buttonHomeEvent"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/event"
+          tools:ignore="ContentDescription" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/menuEvent"
+          android:textColor="@color/white"
+          android:textAlignment="center"
+          android:textSize="16sp"/>
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_gravity="center_horizontal"
+      android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+      <ImageButton
+          android:id="@+id/buttonHomeScore"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/mark"
+          android:contentDescription="TODO" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/menuMark"
+          android:textColor="@color/white"
+          android:textAlignment="center"
+          android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="30dp"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+      <ImageButton
+          android:id="@+id/buttonHomeStatistic"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/statistic"
+          tools:ignore="ContentDescription" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/menuStatistics"
+          android:textColor="@color/white"
+          android:textAlignment="center"
+          android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="30dp"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+      <ImageButton
+          android:id="@+id/buttonHomeAccount"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@drawable/account"
+          tools:ignore="ContentDescription" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/menuAccount"
+          android:textColor="@color/white"
+          android:textAlignment="center"
+          android:textSize="16sp"/>
+    </LinearLayout>
+  </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.stdmanager">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.STDManager">
+        <activity
+            android:name=".Event.EventActivityCreation"
+            android:exported="false" />
+        <activity
+            android:name=".Event.EventActivityUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".Event.EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Statistic.SubjectListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Score.ScoreSubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Score.ScoreStudentEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Score.ScoreStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Subject.SubjectExportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.SettingsApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.SettingsAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Subject.SubjectAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Classroom.ClassroomExportPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Subject.SubjectEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Subject.SubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Statistic.RankedStatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Statistic.GenderStatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Statistic.MarkStatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Classroom.ClassroomExportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Classroom.ClassroomUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Classroom.ClassroomIndividualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Classroom.ClassroomCreationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Classroom.ClassroomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Statistic.StatisticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
