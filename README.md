@@ -12,6 +12,7 @@
 - [**Introduction**](#introduction)
 - [**Usage**](#usage)
 - [**Base-lined Knowledge**](#base-lined-knowledge)
+- [**Video**](#video)
 - [**Features**](#features)
   - [**1. Login**](#1-login)
   - [**2. Home**](#2-home)
@@ -91,6 +92,20 @@ Những kiến thức nền tảng được sử dụng trong đồ án này bao
 10. Tùy biến button với xml nằm trong `res/drawable`
 
 11. Sử dụng Tab Host để xây dựng menu đa màn hình
+
+# [**Video**](#video)
+
+<div align="center">
+    
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=ZtrGcIkKv4U&ab_channel=PhongKaster)
+
+</div>
+
+<h3 align="center">
+
+***Video giới thiệu các chức năng***
+</h3>
+
 # [**Features**](#features)
 
 Trong chương trình này, có tổng cộng 6 chức năng chính. Bao gồm: 
