@@ -12,13 +12,14 @@
 - [**Introduction**](#introduction)
 - [**Usage**](#usage)
 - [**Base-lined Knowledge**](#base-lined-knowledge)
+- [**Reading Comprehension**](#reading-comprehension)
 - [**Video**](#video)
 - [**Features**](#features)
   - [**1. Login**](#1-login)
   - [**2. Home**](#2-home)
   - [**3. Classroom**](#3-classroom)
   - [**4. Subject**](#4-subject)
-  - [**5. Statitisc**](#5-statitisc)
+  - [**5. Statistics**](#5-statistics)
   - [**6. Event**](#6-event)
   - [**7. Score**](#7-score)
   - [**8. Account**](#8-account)
@@ -92,6 +93,23 @@ Những kiến thức nền tảng được sử dụng trong đồ án này bao
 10. Tùy biến button với xml nằm trong `res/drawable`
 
 11. Sử dụng Tab Host để xây dựng menu đa màn hình
+
+# [**Reading Comprehension**](#reading-comprehension)
+
+Đồ án này có 6 chức năng chính nhưng cách xây dựng giữa các chức năng gần như tương tự nhau. Để dễ đọc hiểu đồ án này, các bạn hãy chú đọc các Activity sau đây:
+
+- **Login Activity**: chức năng đăng nhập của đồ án là chức năng quan trọng nên các bạn hãy dành thời gian để đọc kĩ hơn chút xíu 😋
+
+- **Thư mục Classroom**: trong này chứa tất cả các Activity liên quan tới xử lý lớp học. Các chức năng còn lại như Môn học, Sự kiện, Điểm đều có cấu trúc tương tự như phần của mình. Tuy nhiên, trong quá trình làm
+thì chỉ có mình giữ thói quen ghi lại chú thích cho các đoạn chương trình. Các bạn đọc phần của mình sẽ dễ theo dõi hơn các Activity kia hơn xíu 😝😝
+
+- **Thư mục Statistics**: các Activity này để tạo báo cáo bằng dạng file PDF gồm biểu đồ hình tròn ☮ và biểu đồ cột 📊
+
+Nếu chưa biết bắt đầu học từ đâu thì hãy tham khảo 2 danh sách video này nha 
+
+ [**Danh sách video của mình**](https://www.youtube.com/playlist?list=PLkPVg51dQOybWORTScWY1ddflgnkiFhEW)
+
+ [**Danh sách video tham khảo**](https://www.youtube.com/playlist?list=PLqBZuthgOGwj90FaULSh7OPCR_lGk6yzl)
 
 # [**Video**](#video)
 
@@ -204,7 +222,7 @@ Trong chương trình này, có tổng cộng 6 chức năng chính. Bao gồm:
 ***Môn học***
 </h3>
 
-## [**5. Statitisc**](#5statitisc)
+## [**5. Statistics**](#5statistics)
 
 <p align="center">
     <img src="./avatar/screenshot23.png" height="400" />
